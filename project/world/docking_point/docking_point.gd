@@ -2,32 +2,36 @@
 # to. Synchronizes with the docking ship, taking control of it with a remote
 # transform, as well as indicating docking range being achieved or lost by
 # animating a docking range circle.
+# 代表空间中可对接对象的类，玩家可以连接到该对象。
+# 与对接船只同步，通过远程变换控制它，
+# 并通过动画对接范围圆圈来指示对接范围的获得或丢失。
 class_name DockingPoint
 extends Node2D
 
-signal died
+signal died  # 死亡信号
 
-@export var map_icon := MapIcon.new()
-@export var docking_distance := 200.0: set = _set_docking_distance
+@export var map_icon := MapIcon.new()  # 地图图标
+@export var docking_distance := 200.0: set = _set_docking_distance  # 对接距离
 
-var angle_proportion := 1.0
-var is_player_inside := false
-var radius := 0.0
-var docking_point_edge := Vector2.ZERO
+var angle_proportion := 1.0  # 角度比例
+var is_player_inside := false  # 玩家是否在范围内
+var radius := 0.0  # 半径
+var docking_point_edge := Vector2.ZERO  # 对接点边缘
 
-@onready var docking_shape: CollisionShape2D = $DockingArea/CollisionShape2D
-@onready var docking_area: Area2D = $DockingArea
-@onready var collision_shape: CollisionShape2D = $CharacterBody2D/CollisionShape2D
-@onready var agent_location := GSAISteeringAgent.new()
-@onready var ref_to = weakref(self)
-@onready var tween_aura := TweenAura.new()
-@onready var tween : Tween
-@onready var dock_aura := $DockingAura
-@onready var player_rotation_transform = $Sprite2D/PlayerRotationRig/PlayerRotationRemoteTransform
-@onready var player_rotation_transform_rig = $Sprite2D/PlayerRotationRig
+@onready var docking_shape: CollisionShape2D = $DockingArea/CollisionShape2D  # 对接形状
+@onready var docking_area: Area2D = $DockingArea  # 对接区域
+@onready var collision_shape: CollisionShape2D = $CharacterBody2D/CollisionShape2D  # 碰撞形状
+@onready var agent_location := GSAISteeringAgent.new()  # 代理位置
+@onready var ref_to = weakref(self)  # 弱引用
+@onready var tween_aura := TweenAura.new()  # 补间光环
+@onready var tween : Tween  # 补间动画
+@onready var dock_aura := $DockingAura  # 对接光环
+@onready var player_rotation_transform = $Sprite2D/PlayerRotationRig/PlayerRotationRemoteTransform  # 玩家旋转变换
+@onready var player_rotation_transform_rig = $Sprite2D/PlayerRotationRig  # 玩家旋转变换装置
 
 
 func _ready() -> void:
+	# 初始化对接点
 	player_rotation_transform_rig.scale = Vector2.ONE / $Sprite2D.scale
 	radius = collision_shape.shape.radius
 	agent_location.position.x = global_position.x

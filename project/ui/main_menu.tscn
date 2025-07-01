@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dsww2j4bmv25c"]
 
 [ext_resource type="PackedScene" uid="uid://bjne51x01i88h" path="res://ui/main_screen/main_screen.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://ui/menus/sounds/menu_sound_player.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://gncjx82kh0m" path="res://ui/menus/sounds/menu_sound_player.tscn" id="2"]
 [ext_resource type="Theme" path="res://ui/theme_main_menu.tres" id="3"]
-[ext_resource type="Script" path="res://ui/main_menu_texts.gd" id="7"]
-[ext_resource type="Script" path="res://ui/main_menu.gd" id="8"]
+[ext_resource type="Script" uid="uid://dyqytyq0smufa" path="res://ui/main_menu_texts.gd" id="7"]
+[ext_resource type="Script" uid="uid://5wddae58oufb" path="res://ui/main_menu.gd" id="8"]
 [ext_resource type="PackedScene" uid="uid://bv00wk2go2l6s" path="res://ui/screen_fader.tscn" id="9"]
 
 [node name="MainMenu" type="Control"]
