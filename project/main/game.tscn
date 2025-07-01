@@ -14,10 +14,10 @@
 [ext_resource type="Script" uid="uid://dr23iq83b7wf4" path="res://world/game_world.gd" id="14"]
 [ext_resource type="Script" uid="uid://bj0cvhljidirm" path="res://world/spawners/pirate_spawner.gd" id="15"]
 [ext_resource type="Script" uid="uid://cqc6unraeatj1" path="res://ui/minimap/map_display.gd" id="15_38608"]
-[ext_resource type="PackedScene" path="res://ui/menus/upgrades/upgrade_menu.tscn" id="16"]
-[ext_resource type="AudioStream" uid="uid://b5rwtdrww00e7" path="res://ui/minimap/ui_minimap_zoom_in.wav" id="16_1irad"]
+[ext_resource type="PackedScene" uid="uid://bs7l6it1vahj7" path="res://ui/menus/upgrades/upgrade_menu.tscn" id="16"]
+[ext_resource type="AudioStream" uid="uid://c046okkkan4a3" path="res://ui/minimap/ui_minimap_zoom_in.wav" id="16_1irad"]
 [ext_resource type="Script" uid="uid://comv6cvtggbv1" path="res://ui/ui.gd" id="17"]
-[ext_resource type="PackedScene" path="res://ui/menus/quit_menu.tscn" id="18"]
+[ext_resource type="PackedScene" uid="uid://ejah0gioebxd" path="res://ui/menus/quit_menu.tscn" id="18"]
 [ext_resource type="PackedScene" uid="uid://bv00wk2go2l6s" path="res://ui/screen_fader.tscn" id="19"]
 [ext_resource type="PackedScene" uid="uid://53pcfgby5by6" path="res://vfx/distort_mask_view.tscn" id="20"]
 [ext_resource type="PackedScene" uid="uid://dn2lyjt0cp57p" path="res://ui/hud/hud.tscn" id="22"]
@@ -114,17 +114,17 @@ _data = {
 &"disappear": SubResource("Animation_qviax")
 }
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_0tkgw"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_kpj3s"]
 viewport_path = NodePath("SubViewport")
 
 [sub_resource type="ShaderMaterial" id="3"]
 resource_local_to_scene = true
 shader = ExtResource("13")
 shader_parameter/displacement_amount = 12.0
-shader_parameter/displacement_mask = SubResource("ViewportTexture_0tkgw")
+shader_parameter/displacement_mask = SubResource("ViewportTexture_kpj3s")
 
 [sub_resource type="Environment" id="4"]
-background_mode = 3
+background_mode = 1
 glow_enabled = true
 glow_levels/5 = 0.0
 glow_blend_mode = 1
@@ -187,7 +187,7 @@ script = ExtResource("15_38608")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UI/MapDisplay"]
 libraries = {
-"": SubResource("AnimationLibrary_118x6")
+&"": SubResource("AnimationLibrary_118x6")
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI/MapDisplay"]
@@ -225,6 +225,3 @@ script = ExtResource("22_apqpn")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("4")
-
-[editable path="map_view"]
-[editable path="distort_mask_view"]

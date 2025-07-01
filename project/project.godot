@@ -181,5 +181,5 @@ fire2={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.196078, 0.160784, 0.278431, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 environment/defaults/default_environment="res://default_env.tres"
