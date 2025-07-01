@@ -1,4 +1,3 @@
-# Changes scenes after fading the screen on `any key`.
 # 在按下任意键后淡出屏幕并切换场景
 extends Control
 
@@ -20,8 +19,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event is InputEventKey:
 		# 如果是键盘事件，开始切换场景
-	main_screen.animator.play_backwards("intro")
-	menu_sounds.play_confirm()
-	screen_fader.fade_out()
-	await screen_fader.animation_finished
-	get_tree().change_scene_to_file("res://main/game.tscn")
+		main_screen.animator.play_backwards("intro")
+		menu_sounds.play_confirm()
+		screen_fader.fade_out()
+		await screen_fader.animation_finished
+		get_tree().change_scene_to_file("res://main/game.tscn")
