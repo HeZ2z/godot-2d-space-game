@@ -244,7 +244,7 @@ _data = {
 script/source = "extends TextureButton
 
 func _pressed() -> void:
-	OS.shell_open(\"https://gdquest.com\")
+	OS.shell_open(\"https://blog.hezi.space\")
 "
 
 [node name="MainScreen" type="Control"]

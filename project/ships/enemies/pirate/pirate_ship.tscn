@@ -23,7 +23,7 @@ script = ExtResource("2")
 map_icon = ExtResource("3")
 acceleration_max = 900.0
 angular_acceleration_max = 900
-projectile_mask = 3
+projectile_mask = 7
 explosion_effect = ExtResource("4")
 
 [node name="Sprite2D" parent="." index="0"]

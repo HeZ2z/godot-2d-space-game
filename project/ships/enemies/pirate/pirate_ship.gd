@@ -14,7 +14,7 @@ const ALIGNMENT_TOLERANCE := deg_to_rad(5)  # 对齐容差
 # 在小地图上代表船只。使用MapIcon资源。
 @export var map_icon: Resource  # 地图图标
 
-@export var health_max := 100  # 最大生命值
+@export var health_max := 50  # 最大生命值
 
 @export var linear_speed_max := 200.0  # 最大线性速度
 @export var acceleration_max := 15.0  # 最大加速度
