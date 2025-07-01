@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dybp5bg5uv6ob"]
 
-[ext_resource type="Script" path="res://autoload/object_registry.gd" id="1"]
+[ext_resource type="Script" uid="uid://c86s448unjqgc" path="res://autoload/object_registry.gd" id="1"]
 
 [node name="ObjectRegistry" type="Node"]
 script = ExtResource("1")

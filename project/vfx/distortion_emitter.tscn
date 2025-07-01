@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://pk1wnkaywdkt"]
 
 [ext_resource type="Texture2D" uid="uid://b12k1follp0uy" path="res://vfx/fade_cicle_deformed.png" id="1"]
-[ext_resource type="Script" path="res://vfx/distortion_emitter.gd" id="2"]
+[ext_resource type="Script" uid="uid://bl35p2swdd63i" path="res://vfx/distortion_emitter.gd" id="2"]
 
 [sub_resource type="Gradient" id="Gradient_o3ipc"]
 offsets = PackedFloat32Array(0.103806, 0.252595, 0.560554, 1)

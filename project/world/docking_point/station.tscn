@@ -3,7 +3,7 @@
 [ext_resource type="Resource" path="res://world/docking_point/station_map_icon.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://b32dasgmj1vps" path="res://world/docking_point/space-station.svg" id="2"]
 [ext_resource type="PackedScene" uid="uid://bakjlpon86qit" path="res://world/docking_point/docking_point.tscn" id="3"]
-[ext_resource type="Script" path="res://world/docking_point/station.gd" id="4"]
+[ext_resource type="Script" uid="uid://ito1pvacfvg" path="res://world/docking_point/station.gd" id="4"]
 [ext_resource type="AudioStream" uid="uid://dxekdp0bmfv3x" path="res://world/docking_point/radar.wav" id="5"]
 [ext_resource type="Texture2D" uid="uid://bbfahuo0o8ajw" path="res://world/docking_point/signal.svg" id="6"]
 
@@ -111,8 +111,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3xpy8"]
 _data = {
-"Idle": SubResource("6"),
-"RESET": SubResource("Animation_rftpn")
+&"Idle": SubResource("6"),
+&"RESET": SubResource("Animation_rftpn")
 }
 
 [node name="Station" instance=ExtResource("3")]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://debtp1yb0jkjh"]
 
-[ext_resource type="Script" path="res://ships/guns/gun.gd" id="1"]
+[ext_resource type="Script" uid="uid://dqcn8duuhbk2t" path="res://ships/guns/gun.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://rcbxfl1l8gji" path="res://ships/guns/projectile-enemy.svg" id="2"]
 
 [sub_resource type="GDScript" id="1"]

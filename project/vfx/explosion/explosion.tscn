@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dd6xndt4da314" path="res://vfx/explosion/sparkle.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://b7hkga47sgbdd" path="res://vfx/explosion/explosion_gradient_2.tres" id="2"]
 [ext_resource type="Texture2D" uid="uid://2khc22xde2b3" path="res://vfx/explosion/puff.png" id="3"]
-[ext_resource type="Script" path="res://vfx/explosion/explosion.gd" id="4"]
+[ext_resource type="Script" uid="uid://ckl3rv1glc136" path="res://vfx/explosion/explosion.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://dy01acb1efou5" path="res://vfx/explosion/puff_smooth.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://h3o3rsm5s8wf" path="res://vfx/explosion/scraps_gradient.tres" id="6"]
 [ext_resource type="PackedScene" uid="uid://2fqnfiy88gkx" path="res://vfx/shockwave_emitter.tscn" id="7"]
@@ -218,7 +218,7 @@ tracks/9/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n0s0v"]
 _data = {
-"Explode": SubResource("17")
+&"Explode": SubResource("17")
 }
 
 [node name="Explosion" type="Node2D"]

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c1m08atpui1qq" path="res://ui/hud/shield_bar_over.svg" id="1"]
 [ext_resource type="Texture2D" uid="uid://wc1jgcryb66m" path="res://ui/hud/shield_bar_progress.svg" id="2"]
 [ext_resource type="Texture2D" uid="uid://b6ug68cnhqdad" path="res://ui/hud/shield_bar_under.svg" id="3"]
-[ext_resource type="Script" path="res://ui/hud/shield_bar.gd" id="4"]
+[ext_resource type="Script" uid="uid://d2e8ylttlytx1" path="res://ui/hud/shield_bar.gd" id="4"]
 
 [sub_resource type="Gradient" id="1"]
 colors = PackedColorArray(1, 0.269531, 0.269531, 1, 0.294118, 0.356863, 0.670588, 1)
@@ -45,8 +45,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v8dy4"]
 _data = {
-"damage": SubResource("2"),
-"danger": SubResource("3")
+&"damage": SubResource("2"),
+&"danger": SubResource("3")
 }
 
 [node name="ShieldBar" type="TextureProgressBar"]

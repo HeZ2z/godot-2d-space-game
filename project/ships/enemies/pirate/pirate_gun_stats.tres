@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="StatsGun" load_steps=2 format=3 uid="uid://33g1tgu87v1p"]
 
-[ext_resource type="Script" path="res://ships/player/stats_gun.gd" id="1"]
+[ext_resource type="Script" uid="uid://b132g5h73lpkp" path="res://ships/player/stats_gun.gd" id="1"]
 
 [resource]
 script = ExtResource("1")

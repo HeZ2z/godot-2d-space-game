@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bijqggsg45ten"]
 
 [ext_resource type="PackedScene" uid="uid://bakjlpon86qit" path="res://world/docking_point/docking_point.tscn" id="1"]
-[ext_resource type="Script" path="res://world/docking_point/asteroid.gd" id="2"]
+[ext_resource type="Script" uid="uid://miavviwfh1uo" path="res://world/docking_point/asteroid.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://4cefpybwxeud" path="res://world/docking_point/asteroid-round.svg" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
@@ -29,7 +29,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4ue24"]
 _data = {
-"spin": SubResource("3")
+&"spin": SubResource("3")
 }
 
 [sub_resource type="Animation" id="5"]
@@ -63,7 +63,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n33l1"]
 _data = {
-"pulse": SubResource("5")
+&"pulse": SubResource("5")
 }
 
 [sub_resource type="AudioStreamRandomizer" id="6"]

@@ -1,27 +1,27 @@
 [gd_scene load_steps=31 format=3 uid="uid://bxbumyjerxld6"]
 
-[ext_resource type="Script" path="res://world/spawners/asteroid_spawner.gd" id="1"]
-[ext_resource type="Script" path="res://world/spawners/station_spawner.gd" id="2"]
+[ext_resource type="Script" uid="uid://d3h0aubx02v8" path="res://world/spawners/asteroid_spawner.gd" id="1"]
+[ext_resource type="Script" uid="uid://ds8dt0vpiiggx" path="res://world/spawners/station_spawner.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://cb1q0bw0inr12" path="res://ships/enemies/pirate/pirate_ship.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cjw7dyov4br6k" path="res://world/docking_point/station.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://b07d5oc6kv45w" path="res://ships/player/player_ship.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://b0lepns1qetft" path="res://ui/minimap/map_view.tscn" id="6"]
-[ext_resource type="Script" path="res://world/game_initializer.gd" id="7"]
+[ext_resource type="Script" uid="uid://bmuk77c85cn4e" path="res://world/game_initializer.gd" id="7"]
 [ext_resource type="PackedScene" uid="uid://do18uq3pp0ix7" path="res://vfx/background_stars.tscn" id="8"]
 [ext_resource type="Texture2D" uid="uid://bxv8xsooyour0" path="res://main/white.png" id="11"]
 [ext_resource type="PackedScene" uid="uid://bmrr8sydhyk0t" path="res://world/shaking_camera.tscn" id="12"]
-[ext_resource type="Shader" path="res://vfx/shaders/distorted_view.gdshader" id="13"]
-[ext_resource type="Script" path="res://world/game_world.gd" id="14"]
-[ext_resource type="Script" path="res://world/spawners/pirate_spawner.gd" id="15"]
-[ext_resource type="Script" path="res://ui/minimap/map_display.gd" id="15_38608"]
+[ext_resource type="Shader" uid="uid://claf0v61x2j7m" path="res://vfx/shaders/distorted_view.gdshader" id="13"]
+[ext_resource type="Script" uid="uid://dr23iq83b7wf4" path="res://world/game_world.gd" id="14"]
+[ext_resource type="Script" uid="uid://bj0cvhljidirm" path="res://world/spawners/pirate_spawner.gd" id="15"]
+[ext_resource type="Script" uid="uid://cqc6unraeatj1" path="res://ui/minimap/map_display.gd" id="15_38608"]
 [ext_resource type="PackedScene" path="res://ui/menus/upgrades/upgrade_menu.tscn" id="16"]
 [ext_resource type="AudioStream" uid="uid://b5rwtdrww00e7" path="res://ui/minimap/ui_minimap_zoom_in.wav" id="16_1irad"]
-[ext_resource type="Script" path="res://ui/ui.gd" id="17"]
+[ext_resource type="Script" uid="uid://comv6cvtggbv1" path="res://ui/ui.gd" id="17"]
 [ext_resource type="PackedScene" path="res://ui/menus/quit_menu.tscn" id="18"]
 [ext_resource type="PackedScene" uid="uid://bv00wk2go2l6s" path="res://ui/screen_fader.tscn" id="19"]
 [ext_resource type="PackedScene" uid="uid://53pcfgby5by6" path="res://vfx/distort_mask_view.tscn" id="20"]
 [ext_resource type="PackedScene" uid="uid://dn2lyjt0cp57p" path="res://ui/hud/hud.tscn" id="22"]
-[ext_resource type="Script" path="res://vfx/post_process_game_view.gd" id="22_apqpn"]
+[ext_resource type="Script" uid="uid://dewippvd0ekyd" path="res://vfx/post_process_game_view.gd" id="22_apqpn"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_drsak"]
 viewport_path = NodePath("MapView")
@@ -109,9 +109,9 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_118x6"]
 _data = {
-"RESET": SubResource("Animation_nu50f"),
-"appear": SubResource("Animation_b071f"),
-"disappear": SubResource("Animation_qviax")
+&"RESET": SubResource("Animation_nu50f"),
+&"appear": SubResource("Animation_b071f"),
+&"disappear": SubResource("Animation_qviax")
 }
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_0tkgw"]

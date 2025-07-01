@@ -1,11 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dsww2j4bmv25c"]
+[gd_scene load_steps=7 format=3 uid="uid://dsww2j4bmv25c"]
 
 [ext_resource type="PackedScene" uid="uid://bjne51x01i88h" path="res://ui/main_screen/main_screen.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://ui/menus/sounds/menu_sound_player.tscn" id="2"]
 [ext_resource type="Theme" path="res://ui/theme_main_menu.tres" id="3"]
-[ext_resource type="Texture2D" uid="uid://c2tqk03snyo2y" path="res://ui/main_screen/gamepads/xbox_a_button.svg" id="4"]
-[ext_resource type="Texture2D" uid="uid://c0bavtgts8dwh" path="res://ui/main_screen/gamepads/playstation_cross_buttton.svg" id="5"]
-[ext_resource type="Texture2D" uid="uid://b01jiu5efjmmg" path="res://ui/main_screen/gamepads/nintendob_button.svg" id="6"]
 [ext_resource type="Script" path="res://ui/main_menu_texts.gd" id="7"]
 [ext_resource type="Script" path="res://ui/main_menu.gd" id="8"]
 [ext_resource type="PackedScene" uid="uid://bv00wk2go2l6s" path="res://ui/screen_fader.tscn" id="9"]
@@ -63,25 +60,9 @@ text = "Press"
 layout_mode = 2
 
 [node name="AnyKey" type="Label" parent="Context/Texts/HBoxContainer/CenterContainer"]
-modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.301961, 0.65098, 1, 1)
 text = "any key"
-
-[node name="XboxA" type="TextureRect" parent="Context/Texts/HBoxContainer/CenterContainer"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-texture = ExtResource("4")
-
-[node name="PlaystationX" type="TextureRect" parent="Context/Texts/HBoxContainer/CenterContainer"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-texture = ExtResource("5")
-
-[node name="NintendoB" type="TextureRect" parent="Context/Texts/HBoxContainer/CenterContainer"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-texture = ExtResource("6")
 
 [node name="ToStart" type="Label" parent="Context/Texts/HBoxContainer"]
 layout_mode = 2

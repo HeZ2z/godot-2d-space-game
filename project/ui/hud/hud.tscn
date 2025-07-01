@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://kn2ugan2b7cd" path="res://ui/hud/shield_bar.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://6j5jnsgned4s" path="res://ui/cargo_progress.tscn" id="2"]
-[ext_resource type="Script" path="res://ui/hud/hud.gd" id="3"]
+[ext_resource type="Script" uid="uid://bwamdhnsmpup" path="res://ui/hud/hud.gd" id="3"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3

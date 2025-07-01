@@ -1,0 +1,40 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+.godot/
+mono_crash.*.json
+
+# Build directories
+build/
+builds/
+dist/
+
+# System/tool-specific ignores
+.DS_Store
+*~
+*.blend1
+.directory
+*~
+*.bak
+._*
+.Spotlight-V100
+.Trashes
+.Trash-*
+Thumbs.db
+desktop.ini
+
+# Plugin specific ignores
+addons/*/plugin.cfg.import
+

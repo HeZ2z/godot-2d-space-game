@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bakjlpon86qit"]
 
-[ext_resource type="Script" path="res://world/docking_point/docking_point.gd" id="1"]
+[ext_resource type="Script" uid="uid://bp0kccg6tfwny" path="res://world/docking_point/docking_point.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://mfwn106yxb0b" path="res://world/docking_point/dock-aura.svg" id="2"]
-[ext_resource type="Resource" path="res://world/docking_point/asteroid_map_icon.tres" id="3"]
+[ext_resource type="Resource" uid="uid://bnqw2su6r0snw" path="res://world/docking_point/asteroid_map_icon.tres" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 200.0

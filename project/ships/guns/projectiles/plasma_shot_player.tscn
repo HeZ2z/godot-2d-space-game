@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cjuatqq8dyqtm"]
 
 [ext_resource type="PackedScene" uid="uid://qu00x7v3bugx" path="res://ships/guns/projectiles/plasma_shot.tscn" id="1"]
-[ext_resource type="Shader" path="res://vfx/shaders/glow_sprite.gdshader" id="2"]
+[ext_resource type="Shader" uid="uid://88hwhjfl2eh0" path="res://vfx/shaders/glow_sprite.gdshader" id="2"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("2")
@@ -31,7 +31,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5bjcy"]
 _data = {
-"Flicker": SubResource("3")
+&"Flicker": SubResource("3")
 }
 
 [node name="PlasmaShotPlayer" instance=ExtResource("1")]

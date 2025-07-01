@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://gso271go2fev" path="res://ui/main_screen/envelope-foreground.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://cbujfepgfuvom" path="res://ui/main_screen/envelope-background.png" id="2"]
-[ext_resource type="Script" path="res://ui/main_screen/main_screen.gd" id="3"]
+[ext_resource type="Script" uid="uid://1mvx13e61ayx" path="res://ui/main_screen/main_screen.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://cl37op10gaek8" path="res://ui/main_screen/gdquest-logo.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://bnsth1ku11n0g" path="res://vfx/star.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://c8fufq6lxck4o" path="res://ui/main_screen/title.png" id="6"]
@@ -48,7 +48,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gxh32"]
 _data = {
-"idle": SubResource("4")
+&"idle": SubResource("4")
 }
 
 [sub_resource type="Animation" id="5"]
@@ -70,7 +70,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ihgpq"]
 _data = {
-"idle": SubResource("5")
+&"idle": SubResource("5")
 }
 
 [sub_resource type="Animation" id="6"]
@@ -92,7 +92,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tvt5v"]
 _data = {
-"idle": SubResource("6")
+&"idle": SubResource("6")
 }
 
 [sub_resource type="Animation" id="7"]
@@ -150,7 +150,7 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7t1un"]
 _data = {
-"idle": SubResource("7")
+&"idle": SubResource("7")
 }
 
 [sub_resource type="Animation" id="8"]
@@ -236,8 +236,8 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cg3t5"]
 _data = {
-"idle": SubResource("8"),
-"intro": SubResource("9")
+&"idle": SubResource("8"),
+&"intro": SubResource("9")
 }
 
 [sub_resource type="GDScript" id="10"]

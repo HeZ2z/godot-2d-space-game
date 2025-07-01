@@ -1,5 +1,4 @@
-# Changes scenes after fading the screen on `any key` or on the A/B/cross
-# buttons on a gamepad.
+# Changes scenes after fading the screen on `any key`.
 extends Control
 
 const FADE_IN_TIME := 0.5
@@ -17,7 +16,7 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if screen_fader.is_playing:
 		return
-	if event is InputEventKey or event.is_action_pressed("thrust_forwards"):
+	if event is InputEventKey:
 		main_screen.animator.play_backwards("intro")
 		menu_sounds.play_confirm()
 		screen_fader.fade_out()

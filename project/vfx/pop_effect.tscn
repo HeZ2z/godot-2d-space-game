@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bkq5cx2pnrx5o"]
 
-[ext_resource type="Script" path="res://vfx/pop_effect.gd" id="1"]
+[ext_resource type="Script" uid="uid://b8vyq5xj332mf" path="res://vfx/pop_effect.gd" id="1"]
 
 [node name="PopEffect" type="Node2D"]
 top_level = true
