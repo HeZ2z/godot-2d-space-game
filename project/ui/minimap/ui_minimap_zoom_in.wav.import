@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://b5rwtdrww00e7"
+uid="uid://c046okkkan4a3"
 path="res://.godot/imported/ui_minimap_zoom_in.wav-7bbee0341ba9c34739eb352aaf96a58f.sample"
 
 [deps]
@@ -21,4 +21,4 @@ edit/normalize=false
 edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
-compress/mode=0
+compress/mode=2

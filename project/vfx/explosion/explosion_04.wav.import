@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://drt8ev2wal7ac"
+uid="uid://unk38hplu0ur"
 path="res://.godot/imported/explosion_04.wav-88a707408a73e34078b6601a1fc05f2e.sample"
 
 [deps]
@@ -16,9 +16,9 @@ force/8_bit=false
 force/mono=false
 force/max_rate=false
 force/max_rate_hz=44100
-edit/trim=true
+edit/trim=false
 edit/normalize=false
 edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
-compress/mode=0
+compress/mode=2
